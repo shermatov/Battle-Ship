@@ -7,8 +7,13 @@ public class Main {
 
         players[0]=new Player();
         players[1]=new Player();
-        System.out.println("Place your ships.");
-        System.out.println("Direction 1 is horizontal. Direction 2 is vertical.");
+        System.out.println("==============================");
+        System.out.println("Welcome to Battleship.");
+        System.out.println("==============================");
+        System.out.println("First you need to choose the location of your ships");
+        System.out.println("Hit enter to place the next ship.");
+        sc.nextLine();
+        
         players[0].printMyShips();
 
         //Has the player place their ships

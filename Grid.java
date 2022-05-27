@@ -89,6 +89,7 @@ public class Grid
 
     public void printStatus()
     {
+        System.out.println("Your current grid of ships.");
         for(int i=0;i<NUM_ROWS;i++)
         {
             if (i==0)

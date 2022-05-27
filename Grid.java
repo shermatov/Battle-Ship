@@ -2,6 +2,7 @@ public class Grid
 {
     public static final int NUM_ROWS = 10;
     public static final int NUM_COLS = 10;
+    Character[] tamgalar = new Character[]{' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J'};
 
     private final Location[][] grid=new Location[NUM_ROWS][NUM_COLS];
 
@@ -93,11 +94,11 @@ public class Grid
         for(int i=0;i<NUM_ROWS;i++)
         {
             if (i==0)
-                System.out.println("   A B C D E F J H I J");
+                System.out.println("   1 2 3 4 5 6 7 8 9 10");
             if(i==NUM_ROWS-1)
-                System.out.print(i+1+" ");
+                System.out.print(tamgalar[i+1]+" ");
             else
-                System.out.print(i+1+"  ");
+                System.out.print(tamgalar[i+1]+"  ");
             for(int j=0;j<NUM_COLS;j++)
             {
                 if(grid[i][j].getStatus()==0)
@@ -134,9 +135,9 @@ public class Grid
             if (i==0)
                 System.out.println("   1 2 3 4 5 6 7 8 9 10");
             if(i==NUM_ROWS-1)
-                System.out.print(i+1+" ");
+                System.out.print(tamgalar[i+1]+" ");
             else
-                System.out.print(i+1+"  ");
+                System.out.print(tamgalar[i+1]+"  ");
             for(int j=0;j<NUM_COLS;j++)
             {
                 if(grid[i][j].hasShip())
